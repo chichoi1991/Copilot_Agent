@@ -30,11 +30,16 @@
 ### 🏆 결과물 예시
 > 에이전트에게 직접 질문
 <img width="2278" height="1288" alt="image" src="https://github.com/user-attachments/assets/6957cddf-bc30-44e9-9ee9-f8ea1aa88272" />
-</br>
-</br>
+ <br>
+ <br>
+ <br>
 
 > 별도로 설문조사 사이트를 만들 필요 없이, List에서 바로 연결후, Agent가 자동으로 메일 발송
-<img width="2395" height="1457" alt="image" src="https://github.com/user-attachments/assets/4b2ebcb7-b9f1-4c28-bf0f-325877e603e5" />
-</br>
-</br>
-<img width="2388" height="1375" alt="image" src="https://github.com/user-attachments/assets/368fe4ef-1be5-43b3-b7e7-b5cd644546c7" />
+<img width="2557" height="901" alt="image" src="https://github.com/user-attachments/assets/c1022c01-bd56-4012-bc77-c417b4969b6d" />
+ <br>
+ <br>
+ <br>
+<img width="1012" height="1265" alt="image" src="https://github.com/user-attachments/assets/a2c18eb9-6f85-45a3-bd09-a707e02ec2ae" />
+<img width="1012" height="1265" alt="image" src="https://github.com/user-attachments/assets/a9608e21-9aee-4071-93bd-d9a88e3f3e47" />
+<img width="1012" height="1265" alt="image" src="https://github.com/user-attachments/assets/ed686746-1a48-4cfe-bd07-b02e8cd871cb" />
+
