@@ -45,8 +45,6 @@
 > 별도로 설문조사 사이트를 만들 필요 없이, 쉐어포인트 온라인에서 List를 만들어 연결하여, Agent가 자동으로 메일로 응답
 <img width="2557" height="901" alt="image" src="https://github.com/user-attachments/assets/c1022c01-bd56-4012-bc77-c417b4969b6d" />
  <br>
- <br>
- <br>
 <img width="1012" height="1265" alt="image" src="https://github.com/user-attachments/assets/a2c18eb9-6f85-45a3-bd09-a707e02ec2ae" />
 <img width="1012" height="1265" alt="image" src="https://github.com/user-attachments/assets/a9608e21-9aee-4071-93bd-d9a88e3f3e47" />
 <img width="1012" height="1265" alt="image" src="https://github.com/user-attachments/assets/ed686746-1a48-4cfe-bd07-b02e8cd871cb" />
