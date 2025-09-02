@@ -22,8 +22,8 @@
 ---
 
 ### 📌 참고 사항
+- 모든 실습은 Copilot studio preview 사이트에서 진행됩니다. link -> https://copilotstudio.preview.microsoft.com
 - 실습 전 Copilot Studio 계정 및 환경 설정이 필요합니다.
-- 실습 중 제공되는 템플릿 및 예제는 자유롭게 수정 가능합니다.
 
 ---
 
