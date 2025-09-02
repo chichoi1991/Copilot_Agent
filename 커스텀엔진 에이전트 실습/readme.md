@@ -24,3 +24,17 @@
 ### 📌 참고 사항
 - 실습 전 Copilot Studio 계정 및 환경 설정이 필요합니다.
 - 실습 중 제공되는 템플릿 및 예제는 자유롭게 수정 가능합니다.
+
+---
+
+### 🏆 결과물 예시
+> 에이전트에게 직접 질문
+<img width="2278" height="1288" alt="image" src="https://github.com/user-attachments/assets/6957cddf-bc30-44e9-9ee9-f8ea1aa88272" />
+</br>
+</br>
+
+> 별도로 설문조사 사이트를 만들 필요 없이, List에서 바로 연결후, Agent가 자동으로 메일 발송
+<img width="2395" height="1457" alt="image" src="https://github.com/user-attachments/assets/4b2ebcb7-b9f1-4c28-bf0f-325877e603e5" />
+</br>
+</br>
+<img width="2388" height="1375" alt="image" src="https://github.com/user-attachments/assets/368fe4ef-1be5-43b3-b7e7-b5cd644546c7" />
