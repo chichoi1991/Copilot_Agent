@@ -89,4 +89,6 @@
 
 
 ## 🔍 참고 문서
-- [Copilot Studio Lite 공식 문서](https://learn.microsoft.com/ko-kr/microsoft-365-copilot/extvs Full 비교](https://learn.microsoft.com/ko-kr/microsoft-365-copilot/extensibility/agents-overview#choose-what-type-of-agent-to 가이드](https://learn.microsoft.com/ko-kr/microsoft-365-copilot/extenstive-agent-tool-comparison
+- https://learn.microsoft.com/ko-kr/microsoft-365-copilot/extensibility/overview
+- https://learn.microsoft.com/ko-kr/microsoft-365-copilot/extensibility/agents-overview#choose-what-type-of-agent-to-build
+- https://learn.microsoft.com/ko-kr/microsoft-365-copilot/extensibility/declarative-agent-tool-comparison
