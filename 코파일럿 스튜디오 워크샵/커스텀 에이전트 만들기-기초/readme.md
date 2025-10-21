@@ -13,7 +13,6 @@ Copilot studio를 통해 Custom Engine Agent를 처음 만들어보는 사용자
 - 지식 연결(SharePoint)
 - 도구 추가 Pre-built Connector (메일 발송)
 - 플로우 추가 (채널 알림 후 SPO 업데이트)
-- AI Builder 프롬프트 추가 
-- (TBD) MCP 커넥터 추가
 - 트리거 추가
+- 에이전트 게시 및 공유
 <br/>
