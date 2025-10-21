@@ -32,18 +32,87 @@
 - **업무 자동화 에이전트**: 승인 요청, 메일 발송 등 반복 작업 처리
 
 
-## 🔍 에이전트 유형 비교표
+## 🛠 선언형 에이전트를 구축하는데 이용할 수 있는 도구들
 
-| **특징** | **선언적 에이전트** | **사용자 지정 엔진 에이전트** |
-|----------|----------------------|--------------------------------|
-| **사용 사례** | 집중된 시나리오에 Microsoft 365 Copilot을 사용합니다. | 복잡한 워크플로 또는 고급 통합을 사용합니다. |
-| **공유 및 액세스** | 개인이 사용할 수 있도록 설계되었습니다. | 개인 사용과 그룹 협업을 모두 지원합니다. |
-| **사용자화** | Copilot의 오케스트레이터 및 모델로 제한됩니다. | AI 모델 및 오케스트레이션 선택을 포함하여 완전히 사용자 정의할 수 있습니다. |
-| **사전 예방적 상호 작용** | 지원되지 않습니다. 사용자가 시작한 상호 작용에 의존합니다. | 상담원이 직접 사용자 입력 없이도 자동으로 작업을 트리거할 수 있도록 합니다. |
-| **채널** | Microsoft 365 앱에 통합됩니다. | Microsoft 365 및 외부 앱에서 사용할 수 있습니다. |
-| **설정 복잡성** | 로우 코드 도구(Copilot Studio) 및 프로 코드 도구(Visual Studio Code/Agents Toolkit)를 사용하여 개발할 수 있습니다. | Copilot Studio의 간단한 설정부터 Visual Studio 또는 VS Code를 사용한 고급 프로 코드 구현까지 다양합니다. |
-| **엔진 호스팅** | Microsoft 365에서 호스트됩니다. | Copilot Studio를 사용하여 Microsoft 365에서 호스팅되거나 Azure AI와 같은 사용자 지정 솔루션을 사용하여 외부에서 호스팅됩니다. |
-| **배포 옵션** | 내 조직 내에서 또는 내 고객(ISV)을 위해 상업용 저장소에 게시합니다. | 내 조직 내에서 또는 내 고객(ISV)을 위해 상업용 저장소에 게시합니다. |
-| **규정 준수 및 보안** | Microsoft 365 규정 준수, RAI 및 보안 표준을 상속합니다. | 자체 규정 준수, RAI 관행 및 보안 조치를 보장해야 합니다. |
+선언적 에이전트를 빌드하기 위한 다양한 도구와 각 도구의 특징, 권장 사용 사례를 아래와 같이 비교합니다.
 
-참고 자료: [효과적인 지침 작성 방법](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/declarative-agent-instructions)
+## 1. 도구 및 권장 용도
+
+| 도구 | 코딩 레벨 | 설명 | 권장 사용자 |
+|------|----------|------|-------------|
+| **Microsoft 365 Agents Toolkit** | 프로 코드 | 고급 기능(커스텀 API 액션, Adaptive Card, CI/CD 등) 포함 | 개발자, API 확장 및 소스 코드 제어가 필요한 경우 |
+| **Copilot Studio (Full Experience)** | 로우 코드 | 드래그 앤 드롭 인터페이스, Power Platform 통합, 고급 작업 지원 | 정보 담당자, 업무 자동화 필요 |
+| **Copilot Studio Lite Experience** | 노코드 | 간단 설정으로 에이전트 생성 가능 | 코드 경험 없는 업무 사용자 (온보딩, 문서 답변 등) |
+| **SharePoint Agents** | 노코드 | SharePoint/Teams 내에서 실행되는 에이전트 | 특정 사이트, 라이브러리, 문서 사용 우선시하는 업무 사용자 |
+
+---
+
+## 2. 요구 조건 및 배포 방법
+
+| 도구 | 요구사항 | 배포 대상 |
+|------|----------|-----------|
+| **Agents Toolkit** | Microsoft 365 구독 + 사이드로딩, Visual Studio/VS Code, Azure 구독(선택) | Organizations with Copilot license |
+| **Copilot Studio Full** | Microsoft 365 구독 + Copilot 라이선스 + Copilot Studio 설치 | Copilot 이용 중인 사용자 |
+| **Copilot Studio Lite** | Microsoft 365 구독 + “Create agent” 옵션 활성화 | Microsoft 365/Teams 중 사용 |
+| **SharePoint Agents** | Microsoft 365 구독 + 사이트 관리자 권한 | SharePoint 사이트 내 직접 배포 |
+
+---
+
+## 3. 도구별 장단점
+
+| 도구 | ✅ 장점 | ⚠️ 단점 |
+|------|---------|----------|
+| **Agents Toolkit** | • 전문 개발자 대상 환경<br>• 커스터마이징 API 유연성<br>• Adaptive Card 지원 및 CI/CD<br>• 신기능 우선 적용 | • Power Platform 연결 지원 부족<br>• UI 없이 JSON 편집 필요<br>• 가파른 학습 곡선 |
+| **Copilot Studio Full** | • 로우 코드 UI (드래그 앤 드롭)<br>• Power Platform 연결 사용 가능 | • 코드 제어 한계<br>• CI/CD 소스 제어 미지원<br>• Adaptive Card 제한 |
+| **Copilot Studio Lite** | • 매우 단순한 설정<br>• 신뢰도 높은 실무형 기능 | • 고급 설정 불가<br>• 기능 제한됨 |
+| **SharePoint Agents** | • 특정 라이브러리 중심으로 맞춤 설정 가능<br>• SharePoint, Teams에 즉시 통합 | • SharePoint 외부에서는 사용 어려움 |
+
+---
+
+## ✅ 요약
+
+- **개발자 대상**: `Agents Toolkit` – 커스터마이징 & CI/CD 환경에 적합
+- **정보 담당자/비즈니스 사용자**: `Copilot Studio Full` – 로우 코드로 복잡한 로직 구현 가능
+- **코딩 경험 없음**: `Copilot Studio Lite` 또는 `SharePoint Agents` – 간단 설정으로 업무 대응
+
+# ✅ 효과적인 지침(Instructions)의 중요성과 작성법
+
+## 🔍 왜 지침이 중요한가?
+- **에이전트의 행동을 결정하는 핵심 요소**: 지침은 Copilot이 어떤 작업을 수행하고 어떤 방식으로 응답할지를 정의합니다.
+- **사용자 경험 향상**: 명확하고 구체적인 지침은 정확한 답변과 일관된 결과를 제공합니다.
+- **보안 및 규정 준수 유지**: 지침을 통해 데이터 접근 범위와 처리 규칙을 명확히 설정할 수 있습니다.
+
+---
+
+## 🛠 효과적인 지침 작성 원칙
+| 원칙 | 설명 |
+|------|------|
+| **명확성** | 모호한 표현을 피하고, 구체적인 작업과 조건을 명시합니다. |
+| **간결성** | 불필요한 문장은 줄이고 핵심 규칙만 포함합니다. |
+| **맥락 제공** | 데이터 소스, 출력 형식, 예외 처리 등 필요한 정보를 포함합니다. |
+| **사용자 친화성** | 결과는 표, 마크다운 등 직관적인 형식으로 제공하도록 지시합니다. |
+| **안전성** | 민감 데이터 처리 시 규정 준수 및 보안 정책을 명시합니다. |
+
+---
+
+## ✅ 작성 예시
+**목적**: SharePoint에서 문서를 검색하고 요약  
+**지침 예시**:
+- 사용자가 요청한 키워드로 SharePoint 문서를 검색합니다.
+- 검색 결과에서 가장 관련성이 높은 문서를 선택합니다.
+- 문서의 핵심 내용을 3~5줄로 요약하고, 원본 문서 이름과 위치를 표시합니다.
+- 출력은 마크다운 표 형식으로 제공합니다.
+
+---
+
+📌 참고 문서:  
+[Declarative Agent Instructions – Microsoft Docs](https://learn.microsoft.com/ko-kr/microsoft-365-copilot/extensibility/declarative-agent-tool-comparison)
+
+
+
+## 교육에 참고된 자료들
+참고 자료#1: [선언형 에이전트 개발도구 개요](https://learn.microsoft.com/ko-kr/microsoft-365-copilot/extensibility/declarative-agent-tool-comparison)
+
+참고 자료#2: [코파일럿 스튜디오에서 선언형 에이전트 생성](https://learn.microsoft.com/ko-kr/microsoft-copilot-studio/microsoft-copilot-extend-copilot-extensions?context=%2Fmicrosoft-365-copilot%2Fextensibility%2Fcontext)
+
+참고 자료#3: [효과적인 지침 작성 방법](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/declarative-agent-instructions)
