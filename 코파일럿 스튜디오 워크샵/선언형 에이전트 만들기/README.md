@@ -40,10 +40,10 @@
 
 | 도구 | 코딩 레벨 | 설명 | 권장 사용자 |
 |------|----------|------|-------------|
-| **Microsoft 365 Agents Toolkit** | 프로 코드 | 고급 기능(커스텀 API 액션, Adaptive Card, CI/CD 등) 포함 | 개발자, API 확장 및 소스 코드 제어가 필요한 경우 |
-| **Copilot Studio (Full Experience)** | 로우 코드 | 드래그 앤 드롭 인터페이스, Power Platform 통합, 고급 작업 지원 | 정보 담당자, 업무 자동화 필요 |
-| **Copilot Studio Lite Experience** | 노코드 | 간단 설정으로 에이전트 생성 가능 | 코드 경험 없는 업무 사용자 (온보딩, 문서 답변 등) |
+| **Copilot Agent Builder** | 노코드 | 간단 설정으로 에이전트 생성 가능 | 팀즈내 Copilot에서 직접 만들 수 있으며 코드 중심 개발 경험이 없는 일반 업무 사용자들에게 적합 (온보딩, 문서 답변 등) |
 | **SharePoint Agents** | 노코드 | SharePoint/Teams 내에서 실행되는 에이전트 | 특정 사이트, 라이브러리, 문서 사용 우선시하는 업무 사용자 |
+| **Copilot Studio** | 로우 코드 | 드래그 앤 드롭 인터페이스, Power Platform 통합, 고급 작업 지원 | 정보 담당자, 업무 자동화 필요 |
+| **Microsoft 365 Agents Toolkit** | 프로 코드 | 고급 기능(커스텀 API 액션, Adaptive Card, CI/CD 등) 포함 | 개발자, API 확장 및 소스 코드 제어가 필요한 경우 |
 
 ---
 
@@ -51,10 +51,11 @@
 
 | 도구 | 요구사항 | 배포 대상 |
 |------|----------|-----------|
-| **Agents Toolkit** | Microsoft 365 구독 + 사이드로딩, Visual Studio/VS Code, Azure 구독(선택) | Organizations with Copilot license |
-| **Copilot Studio Full** | Microsoft 365 구독 + Copilot 라이선스 + Copilot Studio 설치 | Copilot 이용 중인 사용자 |
-| **Copilot Studio Lite** | Microsoft 365 구독 + “Create agent” 옵션 활성화 | Microsoft 365/Teams 중 사용 |
+| **Copilot Agent Builder** | Microsoft 365 구독 + “Create agent” 옵션 활성화 | Microsoft 365/Teams 중 사용 |
 | **SharePoint Agents** | Microsoft 365 구독 + 사이트 관리자 권한 | SharePoint 사이트 내 직접 배포 |
+| **Copilot Studio ** | Microsoft 365 구독 + Copilot 라이선스 + Copilot Studio 설치 | Copilot 이용 중인 사용자 |
+| **Agents Toolkit** | Microsoft 365 구독 + 사이드로딩, Visual Studio/VS Code, Azure 구독(선택) | Organizations with Copilot license |
+
 
 ---
 
@@ -62,19 +63,20 @@
 
 | 도구 | ✅ 장점 | ⚠️ 단점 |
 |------|---------|----------|
-| **Agents Toolkit** | • 전문 개발자 대상 환경<br>• 커스터마이징 API 유연성<br>• Adaptive Card 지원 및 CI/CD<br>• 신기능 우선 적용 | • Power Platform 연결 지원 부족<br>• UI 없이 JSON 편집 필요<br>• 가파른 학습 곡선 |
-| **Copilot Studio Full** | • 로우 코드 UI (드래그 앤 드롭)<br>• Power Platform 연결 사용 가능 | • 코드 제어 한계<br>• CI/CD 소스 제어 미지원<br>• Adaptive Card 제한 |
-| **Copilot Studio Lite** | • 매우 단순한 설정<br>• 신뢰도 높은 실무형 기능 | • 고급 설정 불가<br>• 기능 제한됨 |
+| **Copilot Agent Builder** | • 매우 단순한 설정<br>• 신뢰도 높은 실무형 기능 | • 고급 설정 불가<br>• 기능 제한됨 |
 | **SharePoint Agents** | • 특정 라이브러리 중심으로 맞춤 설정 가능<br>• SharePoint, Teams에 즉시 통합 | • SharePoint 외부에서는 사용 어려움 |
+| **Copilot Studio** | • 로우 코드 UI (드래그 앤 드롭)<br>• Power Platform 연결 사용 가능 | • 코드 제어 한계<br>• CI/CD 소스 제어 미지원<br>• Adaptive Card 제한 |
+| **Agents Toolkit** | • 전문 개발자 대상 환경<br>• 커스터마이징 API 유연성<br>• Adaptive Card 지원 및 CI/CD<br>• 신기능 우선 적용 | • Power Platform 연결 지원 부족<br>• UI 없이 JSON 편집 필요<br>• 가파른 학습 곡선 |
+
 
 ---
 
 ## ✅ 요약
 
+- **코딩 경험 없음**: `Copilot Agent Builder` 또는 `SharePoint Agents` – 간단 설정으로 업무 대응
+- **정보 담당자/비즈니스 도메인 전문 사용자**: `Copilot Studio Full` – 로우 코드로 복잡한 로직 구현 가능
 - **개발자 대상**: `Agents Toolkit` – 커스터마이징 & CI/CD 환경에 적합
-- **정보 담당자/비즈니스 사용자**: `Copilot Studio Full` – 로우 코드로 복잡한 로직 구현 가능
-- **코딩 경험 없음**: `Copilot Studio Lite` 또는 `SharePoint Agents` – 간단 설정으로 업무 대응
-
+- 
 # ✅ 효과적인 지침(Instructions)의 중요성과 작성법
 
 ## 🔍 왜 지침이 중요한가?
