@@ -107,9 +107,9 @@
 
 ---
 
-📌 참고 문서:  
-[Declarative Agent Instructions – Microsoft Docs](https://learn.microsoft.com/ko-kr/microsoft-365-copilot/extensibility/declarative-agent-tool-comparison)
-
+## 실습하기
+아래 링크를 통해 선언현 에이전트 작성을 실습할 수 있습니다.
+[실습하기](https://github.com/chichoi1991/Copilot_Agent/blob/main/%EC%BD%94%ED%8C%8C%EC%9D%BC%EB%9F%BF%20%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4%20%EC%9B%8C%ED%81%AC%EC%83%B5/%EC%84%A0%EC%96%B8%ED%98%95%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EB%A7%8C%EB%93%A4%EA%B8%B0/1.%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EC%83%9D%EC%84%B1%20%EB%B0%8F%20%EC%A7%80%EC%B9%A8%20%EC%9E%91%EC%84%B1.md)
 
 
 ## 교육에 참고된 자료들
@@ -118,3 +118,5 @@
 참고 자료#2: [코파일럿 스튜디오에서 선언형 에이전트 생성](https://learn.microsoft.com/ko-kr/microsoft-copilot-studio/microsoft-copilot-extend-copilot-extensions?context=%2Fmicrosoft-365-copilot%2Fextensibility%2Fcontext)
 
 참고 자료#3: [효과적인 지침 작성 방법](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/declarative-agent-instructions)
+
+참조 자료#4 : [Declarative Agent Instructions – Microsoft Docs](https://learn.microsoft.com/ko-kr/microsoft-365-copilot/extensibility/declarative-agent-tool-comparison)
