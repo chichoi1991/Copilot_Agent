@@ -1,0 +1,6 @@
+node_modules/
+dist/
+__state__/
+memory_store/
+.env
+*.js.map
